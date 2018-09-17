@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/toolbar_options_layout"
+    android:visibility="invisible"
+    android:clickable="true"
+    android:elevation="4dp">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar_options_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/options_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="-4dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/option_background"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <ScrollView
+                android:id="@+id/option_scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/option_scroll_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:elevation="4dp"
+                    android:orientation="vertical" />
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
